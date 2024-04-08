@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  exampleserver:
+  orbitprod:
     uses: ./.github/workflows/update-keys.yml
     with:
-      HOST: exampleserver
+      HOST: orbitprod
     secrets:
       KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}

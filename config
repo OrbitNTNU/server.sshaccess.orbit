@@ -1,4 +1,3 @@
-Host exampleserver
-    HostName <ip or dnsname>
-    User <username>
-    Port <port> # default is 22
+Host orbitprod
+    HostName 129.241.152.175
+    User orbit
