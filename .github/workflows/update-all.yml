@@ -12,3 +12,10 @@ jobs:
       HOST: orbitprod
     secrets:
       KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
+
+  web-taket-server:
+    uses: ./.github/workflows/update-keys.yml
+    with:
+      HOST: web-taket-server
+    secrets:
+      KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
