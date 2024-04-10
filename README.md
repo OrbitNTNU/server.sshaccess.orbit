@@ -13,6 +13,6 @@ On a push to this repository, all authorized_keys files are updated on all serve
 ## Add host
 
 1. add new host to "config" file
-2. execute `ssh-keyscan -t ssh-ed25519 [-p 0port>] <ip or dnsname> >> known_hosts` to add the host to known_hosts
+2. execute `ssh-keyscan -t ssh-ed25519 [-p <port>] <hostname> >> known_hosts` to add the host to known_hosts
 4. add host to ".github/workflows/update-all.yml" file
 5.  the changes to this repository
