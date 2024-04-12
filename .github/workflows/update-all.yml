@@ -13,9 +13,9 @@ jobs:
     secrets:
       KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
 
-  web-taket-server:
+  webtaket:
     uses: ./.github/workflows/update-keys.yml
     with:
-      HOST: web-taket-server
+      HOST: webtaket
     secrets:
       KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
