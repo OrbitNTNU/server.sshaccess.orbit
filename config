@@ -2,7 +2,7 @@ Host orbitprod
     HostName 129.241.152.175
     User orbit
 
-Host web-taket-server
+Host webtaket
     HostName 129.241.208.10
     User web
 
