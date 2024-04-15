@@ -47,7 +47,7 @@ For this script to work it needs SSH access to the server. For this the server n
     find and change the following lines
     ```sshd_config
     PasswordAuthentication no
-    PermitEmptyPasswords no
+    PermitRootLogin no
     ```
 
 9. restart the SSH service
