@@ -19,7 +19,7 @@ For this script to work it needs SSH access to the server. For this the server n
 ### Prepare server
 
 1. You need to have SSH access to the server. Note down the Hostname and the User you want to use.
-1. add the rootkey_*.pub from this repository to the servers ~/.ssh/authorized_keys file (in the users home directory)
+2. add the rootkey_*.pub from this repository to the servers ~/.ssh/authorized_keys file (in the users home directory)
 
 ### Configure repository
 
@@ -30,18 +30,17 @@ For this script to work it needs SSH access to the server. For this the server n
         User <user>
         Port <port> # optional
     ```
-4. execute `ssh-keyscan -t ssh-ed25519 [-p <port>] <hostname> >> known_hosts` to add the host to known_hosts
-5. add host to ".github/workflows/update-all.yml" file
-6. push the changes to this repository
+4. add host to ".github/workflows/update-all.yml" file
+5. push the changes to this repository
 
 ### Server SSH configuration
 
-4. Now check with your own key if you have access to the server
+6. Now check with your own key if you have access to the server
     ```bash
     ssh <user>@<hostname
     ```
-5. ONLY CONTINUE IF YOU HAVE ACCESS WITHOUT NEEDING A PASSWORD
-6. Now you need to disable password login and root login via SSH
+7. ONLY CONTINUE IF YOU HAVE ACCESS WITHOUT NEEDING A PASSWORD
+8. Now you need to disable password login and root login via SSH
     ```bash
     sudo nano /etc/ssh/sshd_config
     ```
@@ -51,7 +50,7 @@ For this script to work it needs SSH access to the server. For this the server n
     PermitRootLogin no
     ```
 
-7. restart the SSH service
+9. restart the SSH service
     ```bash
     sudo systemctl restart sshd
     ```

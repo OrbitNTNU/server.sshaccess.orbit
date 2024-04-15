@@ -36,8 +36,8 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           echo "IdentityFile ~/.ssh/private_key" > ~/.ssh/config
+          echo "StrictHostKeyChecking no" >> ~/.ssh/config
           cat config >> ~/.ssh/config
-          cp known_hosts ~/.ssh/known_hosts
           echo "${{ secrets.KEY_PRIVATE }}" > ~/.ssh/private_key
           sudo chmod -R 600 ~/.ssh
           sudo chmod 700 ~/.ssh
