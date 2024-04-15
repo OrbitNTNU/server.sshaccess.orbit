@@ -8,7 +8,7 @@ On a push to this repository, all authorized_keys files are updated on all serve
 
 1. find or create the key you want to add (e.g. `~/.ssh/id_rsa.pub`)
 2. add the key to the `authorized_keys.<servername>` file in this repository (for the server you want to get access to)
-3. push the changes to this repository
+3. commit the changes to this repository
 
 ## Add host
 
@@ -47,7 +47,7 @@ For this script to work it needs SSH access to the server. For this the server n
     find and change the following lines
     ```sshd_config
     PasswordAuthentication no
-    PermitRootLogin no
+    PermitEmptyPasswords no
     ```
 
 9. restart the SSH service
