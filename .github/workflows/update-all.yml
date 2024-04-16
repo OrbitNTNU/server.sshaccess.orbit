@@ -17,5 +17,6 @@ jobs:
     uses: ./.github/workflows/update-keys.yml
     with:
       HOST: webtaket
+      RESTART_SSH: false
     secrets:
       KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
