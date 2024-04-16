@@ -20,7 +20,7 @@ For this script to work it needs SSH access to the server. For this the server n
 
 1. You need to have SSH access to the server. Note down the Hostname and the User you want to use.
 2. add the rootkey_*.pub from this repository to the servers ~/.ssh/authorized_keys file (in the users home directory)  
-   a. if the folder or the file does not exist, use: "mkdir ~/.ssh" to create the directory and adjust the rights with: "chmod 700 ~/.ssh"  
+   a. if the folder does not exist, use: "mkdir ~/.ssh" to create the directory and adjust the rights with: "chmod 700 ~/.ssh"  
    b. use "nano ~/.ssh/authorized_keys" to add the rootkey (exit with ctrl+c, then "y" then press return, afterwards adjust the rights with "chmod 600 ~/.ssh/authorized_keys"
 
 ### Configure repository
