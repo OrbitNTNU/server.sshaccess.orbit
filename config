@@ -6,4 +6,6 @@ Host webtaket
     HostName 129.241.208.10
     User web
 
-
+Host devopstaket
+    HostName 129.241.208.10
+    User devops
