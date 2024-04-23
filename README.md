@@ -16,6 +16,14 @@ SSH Keys basics: [](https://youtu.be/ZKZbPZCnHRE?t=257)
 2. add the key to the `authorized_keys.<servername>` file in this repository (for the server you want to get access to)
 3. commit and push the changes to this repository
 
+4. add new host to "/.ssh/config" locally on your machine
+    ```sshconfig
+    Host <hostname>
+        Hostname <hostname>
+        User <user>
+        Port <port> # optional
+    ```
+
 ## Add host
 
 This script connects to the server via SSH with the rootkey to update the authorized_keys file.
