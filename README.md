@@ -6,7 +6,7 @@ On a push to this repository, all authorized_keys files are updated on all serve
 
 ## Basic understandings
 
-SSH Keys basics: [](https://youtu.be/ZKZbPZCnHRE?t=257)
+SSH Keys basics: "https://youtu.be/ZKZbPZCnHRE?t=257"
 
 ## Usage
 
