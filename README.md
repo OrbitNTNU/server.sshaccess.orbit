@@ -24,7 +24,7 @@ SSH Keys basics: "https://youtu.be/ZKZbPZCnHRE?t=257"
         Port <port> # optional
     ```
 5. If everything is done right, you should have access without need for password with command
-   `ssh user@username`
+   `ssh user@hostname`
 
 ## Add host
 
