@@ -28,3 +28,19 @@ jobs:
       RESTART_SSH: false
     secrets:
       KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
+
+  payloadtaket:
+    uses: ./.github/workflows/update-keys.yml
+    with:
+      HOST: devopstaket
+      RESTART_SSH: false
+    secrets:
+      KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
+
+   orbittaket:
+    uses: ./.github/workflows/update-keys.yml
+    with:
+      HOST: devopstaket
+      RESTART_SSH: false
+    secrets:
+      KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
