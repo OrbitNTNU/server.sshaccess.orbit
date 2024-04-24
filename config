@@ -9,3 +9,7 @@ Host webtaket
 Host devopstaket
     HostName 129.241.208.10
     User devops
+
+Host payloadtaket
+    HostName 129.241.208.10
+    User payload
