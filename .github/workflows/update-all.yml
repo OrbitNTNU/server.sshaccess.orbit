@@ -32,7 +32,7 @@ jobs:
   payloadtaket:
     uses: ./.github/workflows/update-keys.yml
     with:
-      HOST: devopstaket
+      HOST: payloadtaket
       RESTART_SSH: false
     secrets:
       KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
@@ -40,7 +40,7 @@ jobs:
    orbittaket:
     uses: ./.github/workflows/update-keys.yml
     with:
-      HOST: devopstaket
+      HOST: orbittaket
       RESTART_SSH: false
     secrets:
       KEY_PRIVATE: ${{ secrets.KEY_PRIVATE }}
