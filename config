@@ -13,3 +13,7 @@ Host devopstaket
 Host payloadtaket
     HostName 129.241.208.10
     User payload
+
+Host orbittaket
+    HostName 129.241.208.10
+    User orbit
