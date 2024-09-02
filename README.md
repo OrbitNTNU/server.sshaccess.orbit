@@ -10,9 +10,9 @@ SSH Keys basics: "https://youtu.be/ZKZbPZCnHRE?t=257"
 
 ## Usage
 
-1. find or create the key you want to add (e.g. `~/.ssh/id_ed25519.pub`)  
-    if you don't have a key yet, you can create one with `ssh-keygen -t ed25519`
-    to print the key use `cat ~/.ssh/id_ed25519.pub` on linux/mac and `type %USERPROFILE%\.ssh\id_ed25519.pub` on windows
+1. find or create the key you want to add (e.g. `~/.ssh/id_ed25519.pub`).  
+    If you don't have a key yet, you can create one with `ssh-keygen -t ed25519`.
+    To print the key use `cat ~/.ssh/id_ed25519.pub` on linux/mac and `type %USERPROFILE%\.ssh\id_ed25519.pub` on windows.
 2. add the key to the `authorized_keys.<servername>` file in this repository (for the server you want to get access to)
 3. commit and push the changes to this repository
 
