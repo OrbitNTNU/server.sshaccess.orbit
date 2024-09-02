@@ -31,7 +31,7 @@ jobs:
       - name: generate authorized_keys
         run: |
           cat authorized_keys >> ${{ env.FILE }}
-          echo "${{ vars.KEY_PUB }}" >> ${{ env.FILE }}
+          echo -e "\n${{ vars.KEY_PUB }}" >> ${{ env.FILE }}
       - name: prepare ssh
         run: |
           mkdir -p ~/.ssh
