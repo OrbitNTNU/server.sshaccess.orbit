@@ -2,14 +2,14 @@ Host orbitprod
     HostName 129.241.152.175
     User orbit
 
-Host webtaket
+Host taket
     HostName 129.241.208.10
     User web
 
-Host devopstaket
+Host taket
     HostName 129.241.208.10
     User devops
 
-Host payloadtaket
+Host taket
     HostName 129.241.208.10
     User payload
